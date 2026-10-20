@@ -6,11 +6,11 @@
 
 **Member 1:**
 
-| **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details**                                                                                                                           | **Comment**                                                                                                                |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------|
+| **Student ID**                                                                                                                        | 148396                                                                                                                     |
+| **Name**                                                                                                                              | Ida Aluso Masheti                                                                                                          |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I changed the api.py to load our saved .joblib models and serve /predict/student-score and /predict/claim-fraud endpoints. https://github.com/BI-course/smm-202604-b1/tree/feature/api-core-and-models|
 
 **Member 2:**
 
