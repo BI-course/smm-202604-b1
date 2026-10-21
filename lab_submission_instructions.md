@@ -30,11 +30,11 @@
 
 **Member 4:**
 
-| **Details**                                                                                                                           | **Comment**                                                                                                                                                                                                                                                             |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Student ID**                                                                                                                        | 169007                                                                                                                                                                                                                                                                  |
-| **Name**                                                                                                                              | Brian Mutungi                                                                                                                                                                                                                                                           |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I deployed our api.py on Render using the repository's Procfile and tested all the prediction endpoints on Postman.The render link is https://smm-202604-b1-lab.onrender.com. My branch is [https://github.com/BI-course/smm-202604-b1/tree/feature/render-deployment]. |
+| **Details**                                                                                                                           | **Comment**                                                                                                                                                                                                   |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Student ID**                                                                                                                        | 169007                                                                                                                                                                                                        |
+| **Name**                                                                                                                              | Brian Mutungi                                                                                                                                                                                                 |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I deployed our api.py on Render using the repository's Procfile and tested all the prediction endpoints on Postman. My branch is [https://github.com/BI-course/smm-202604-b1/tree/feature/render-deployment]. |
 
 **Member 5:**
 
@@ -68,11 +68,11 @@ Note that you are required to submit the link to the video and NOT the video its
 
 Fill in only the rows that apply to your chosen difficulty level (see Part C below). Leave a row blank if your tier does not require that deployment target.
 
-| **Deployment target**                             | **URL** |
-|:--------------------------------------------------|:--------|
-| Render (the full `api.py`, all endpoints)         |         |
-| Hugging Face Space (Gradio, one tab per model)    |         |
-| Streamlit Community Cloud app (one tab per model) |         |
+| **Deployment target**                             | **URL**                                 |
+|:--------------------------------------------------|:----------------------------------------|
+| Render (the full `api.py`, all endpoints)         | https://smm-202604-b1-lab.onrender.com. |
+| Hugging Face Space (Gradio, one tab per model)    |                                         |
+| Streamlit Community Cloud app (one tab per model) |                                         |
 
 ---
 
