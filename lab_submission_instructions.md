@@ -30,11 +30,11 @@
 
 **Member 4:**
 
-| **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details**                                                                                                                           | **Comment**                                                                                                                                                                                                                                                             |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Student ID**                                                                                                                        | 169007                                                                                                                                                                                                                                                                  |
+| **Name**                                                                                                                              | Brian Mutungi                                                                                                                                                                                                                                                           |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I deployed our api.py on Render using the repository's Procfile and tested all the prediction endpoints on Postman.The render link is https://smm-202604-b1-lab.onrender.com. My branch is [https://github.com/BI-course/smm-202604-b1/tree/feature/render-deployment]. |
 
 **Member 5:**
 
