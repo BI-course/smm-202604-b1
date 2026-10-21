@@ -38,11 +38,11 @@
 
 **Member 5:**
 
-| **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details**                                                                                                                           | **Comment**                                                |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:-----------------------------------------------------------|
+| **Student ID**                                                                                                                        | 169643                                                     |
+| **Name**                                                                                                                              | charles kabuga muriuki                                     |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I built the four-tab Streamlit app for our Group B models by replacing requirements.txt with the pinned library versions that match our saved models and replacing app.py with the app code, with one tab each for the exam score regressor, the insurance claim fraud classifier, the bank customer segmenter and the pharmacy recommender. I ran it locally and tested every tab to confirm each one returns a prediction. I then pushed my branch, opened a Pull Request into main and got it merged. After that I deployed the app from main on Streamlit Community Cloud, where it is live at<br/>https://smm-202604-b1-gkmojoayxdpqjjqb2t5k55.streamlit.app/|
 
 ## Chosen Level of Difficulty
 
