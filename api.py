@@ -47,6 +47,8 @@ print("Group B artifacts loaded successfully. API is ready.")
 @app.route("/api/v1/models/student-exam-score/predictions", methods=["POST"])
 def predict_exam_score():
     payload = request.get_json()
+    # JSON whole numbers arrive as ints; the model needs decimals (floats)
+    payload = {k: float(v) if isinstance(v, int) and not isinstance(v, bool) else v for k, v in payload.items()}
     input_row = pd.DataFrame([payload])
 
     predicted_score = float(regression_pipeline.predict(input_row)[0])
