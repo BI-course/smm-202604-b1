@@ -14,11 +14,11 @@
 
 **Member 2:**
 
-| **Details**                                                                                                                           | **Comment** |
-|:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Details**                                                                                                                           | **Comment**                                                                                                                                                                               |
+|:--------------------------------------------------------------------------------------------------------------------------------------|:------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Student ID**                                                                                                                        | 169884                                                                                                                                                                                    |
+| **Name**                                                                                                                              | Derby Muchiri                                                                                                                                                                             |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I added error handling to the clustering and recommender endpoints in api.py, so a wrong request gives a clear message instead of crashing. I learned that an API must check its inputs. https://github.com/BI-course/smm-202604-b1/tree/feature/unsupervised-endpoints |
 
 **Member 3:**
 
