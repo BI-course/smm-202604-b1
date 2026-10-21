@@ -24,9 +24,9 @@
 
 | **Details**                                                                                                                           | **Comment** |
 |:--------------------------------------------------------------------------------------------------------------------------------------|:------------|
-| **Student ID**                                                                                                                        |             |
-| **Name**                                                                                                                              |             |
-| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** |             |
+| **Student ID**                                                                                                                        | 170160      |
+| **Name**                                                                                                                              | Collins Kibiru |
+| **What part of the lab did you personally<br/>contribute to (provide a link to the<br/>branch(es)), and what did you learn from it?** | I updated requirements/constraints.txt on the [feature/docker-nginx-setup branch] https://github.com/BI-course/smm-202604-b1/tree/feature/docker-nginx-setup to pin compatible versions of scikit-learn, joblib, and mlxtend, and limit pandas and NumPy versions so the saved models load in Docker. I built and started the development Docker Compose stack and verified all four API routes returned HTTP 200. I learned how dependency constraints help keep saved machine-learning models compatible between environments, and how Flask, Gunicorn, and Nginx work together in a Docker setup. |
 
 **Member 4:**
 
