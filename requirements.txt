@@ -1,0 +1,14 @@
+# Root dependency file used by Streamlit Cloud and local repo setup.
+# Keep this in sync with the app-specific requirements used in the subfolders.
+
+streamlit
+requests
+numpy<2.3
+pandas<3
+joblib==1.6.0
+scikit-learn==1.6.1
+imbalanced-learn==0.14.2
+imblearn
+mlxtend==0.23.4
+flask
+flask-cors
