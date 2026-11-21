@@ -39,8 +39,8 @@ clustering_features = clustering_artifact["features"]
 recommendation_lookup = arm_artifact["rules"]
 sku_lookup = arm_artifact["sku_lookup"]
 
-st.set_page_config(page_title="Group B Model Validation Demos", page_icon="\U0001F4CA", layout="centered")
-st.title("Group B -- Model Validation Demos")
+st.set_page_config(page_title="Group B1 Model Validation", page_icon="\U0001F4CA", layout="centered")
+st.title("Group B1 Model Validation")
 
 tab_regression, tab_classification, tab_clustering, tab_arm = st.tabs([
     "Student Exam Score Regressor", "Insurance Claim Fraud Classifier",
@@ -152,50 +152,3 @@ with tab_clustering:
         account_balance_kes = st.number_input("Account Balance (KES)", value=250000.0)
         transactions_per_month = st.number_input("Transactions per Month", value=20.0)
         avg_transaction_amount_kes = st.number_input("Average Transaction Amount (KES)", value=8000.0)
-        years_as_customer = st.number_input("Years as Customer", value=6.0)
-        digital_banking_usage_score = st.number_input("Digital Banking Usage Score", value=70.0)
-        submitted3 = st.form_submit_button("Predict Segment")
-
-    if submitted3:
-        input_row = pd.DataFrame([{
-            "account_balance_kes": float(account_balance_kes),
-            "transactions_per_month": float(transactions_per_month),
-            "avg_transaction_amount_kes": float(avg_transaction_amount_kes),
-            "years_as_customer": float(years_as_customer),
-            "digital_banking_usage_score": float(digital_banking_usage_score),
-        }])[clustering_features]
-        scaled_input = clustering_scaler.transform(input_row)
-        cluster = int(clustering_kmeans.predict(scaled_input)[0])
-        st.success(f"Assigned segment: Cluster {cluster}")
-
-# -----------------------------------------------------------------------
-# 4. Association Rule Mining
-# -----------------------------------------------------------------------
-with tab_arm:
-    with st.form("arm_form"):
-        cart_text = st.text_input("Cart (comma-separated SKUs)", "D03, D05")
-        top_n = st.number_input("Top N Recommendations", min_value=1, value=3)
-        submitted4 = st.form_submit_button("Get Recommendations")
-
-    if submitted4:
-        cart = {sku.strip().upper() for sku in cart_text.split(",") if sku.strip()}
-
-        # Keep only the rules whose "if" part is fully inside the cart,
-        # best rules first (highest confidence, then highest lift)
-        matched_rules = recommendation_lookup[
-            recommendation_lookup["antecedents"].apply(lambda x: set(x).issubset(cart))
-        ].sort_values(by=["confidence", "lift"], ascending=False)
-
-        recommendations = []
-        for _, rule in matched_rules.iterrows():
-            for sku in rule["consequents"]:
-                if sku not in cart and sku not in [r[0] for r in recommendations]:
-                    recommendations.append((sku, rule["confidence"], rule["lift"]))
-        recommendations = recommendations[:int(top_n)]
-
-        if not recommendations:
-            st.warning("No recommendations for this cart -- try a SKU combination seen in the training orders.")
-        else:
-            for sku, confidence, lift in recommendations:
-                st.write(f"**{sku_lookup.get(sku, sku)}** ({sku}) "
-                         f"-- confidence {confidence:.1%}, lift {lift:.2f}")
